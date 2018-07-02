@@ -6,7 +6,7 @@
 		_MainTex ("Base (RGB)", 2D) = "white" {}
 		_Ramp ("Toon Ramp (RGB)", 2D) = "gray" {} 
 		_Speed ("MoveSpeed", Range(20,50)) = 25 // speed of the swaying
-			_Rigidness("Rigidness", Range(1,50)) = 25 // lower makes it look more "liquid" higher makes it look rigid
+		_Rigidness("Rigidness", Range(1,50)) = 25 // lower makes it look more "liquid" higher makes it look rigid
 		_SwayMax("Sway Max", Range(0, 0.1)) = .005 // how far the swaying goes
 		_YOffset("Y offset", float) = 0.5// y offset, below this is no animation
 			
