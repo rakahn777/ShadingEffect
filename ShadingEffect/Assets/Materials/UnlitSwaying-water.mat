@@ -66,12 +66,14 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Rigidness: 3.2
+    - _Rigidness: 3
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
-    - _Speed: 28.3
+    - _Speed: 33.2
     - _SrcBlend: 1
     - _SwayMax: 0.0347
+    - _TestX: 0
+    - _TestZ: 0
     - _UVSec: 0
     - _YOffset: 0.1
     - _ZWrite: 1

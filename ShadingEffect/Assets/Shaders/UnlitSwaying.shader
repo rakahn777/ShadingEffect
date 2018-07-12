@@ -14,7 +14,7 @@
 		Tags 
 		{
 			"RenderType"="Opaque"
-			"DisableBatching" = "True"
+			"DisableBatching" = "LODFading"
 		}
 		LOD 100
 
