@@ -57,7 +57,7 @@
 				v.vertex.x += step(0,v.vertex.y - _YOffset) * x * _SwayMax;// apply the movement if the vertex's y above the YOffset
 				v.vertex.z += step(0,v.vertex.y - _YOffset) * z * _SwayMax;
 
-				o.vertex = UnityObjectToClipPos(v.vertex);
+				o.vertex = UnityObjectToClipPos(v.vertex);// mul(UNITY_MATRIX_MVP, float4(v.vertex.xyz, 1.0));
 				o.uv = TRANSFORM_TEX(v.uv, _MainTex);
 				return o;
 			}
