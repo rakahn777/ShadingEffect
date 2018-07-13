@@ -1,4 +1,4 @@
-﻿Shader "Wrathlust/ToonLitSwaying" 
+﻿Shader "Toon/LitSwaying" 
 {
 	Properties 
 	{
