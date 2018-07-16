@@ -63,6 +63,9 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DisPercent: 0
+    - _DisThreshold: 0.278
+    - _DisWidth: 0.05
+    - _DisWidth2: 0.1
     - _DstBlend: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
@@ -78,4 +81,6 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _DisColor: {r: 0.9558824, g: 0.61007786, b: 0.3443988, a: 1}
+    - _DisColor2: {r: 0.8088235, g: 0.49267688, b: 0.24978374, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
