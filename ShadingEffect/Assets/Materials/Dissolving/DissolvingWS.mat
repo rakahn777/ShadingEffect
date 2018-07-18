@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Dissolving
-  m_Shader: {fileID: 4800000, guid: 9dcbd94f1e111c34b86b29fee7f479f7, type: 3}
+  m_Name: DissolvingWS
+  m_Shader: {fileID: 4800000, guid: 73da512ba17328f41bcf52771e6ff5f7, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -63,7 +63,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DisPercent: 0
-    - _DisThreshold: 0
+    - _DisThreshold: 0.394
     - _DisWidth: 0.05
     - _DisWidth2: 0.1
     - _DstBlend: 0
