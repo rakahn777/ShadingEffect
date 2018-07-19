@@ -5,9 +5,9 @@
 		_MainTex ("Texture", 2D) = "white" {}
 		_NoiseTex ("Dissolve Noise", 2D) = "white" {} // Texture the dissolve is based on
 		_DisThreshold ("Dissolve Threshold", Range(0, 1)) = 0
-		_DisWidth ("Dissolve Width", Range(0, 0.5)) = 0.1
+		_DisWidth ("Dissolve Width", Range(0, 0.5)) = 0.05
 		_DisColor ("Dissolve Color", Color) = (1, 1, 1, 1)
-		_DisWidth2 ("Dissolve Width 2", Range(0, 0.5)) = 0.2
+		_DisWidth2 ("Dissolve Width 2", Range(0, 0.5)) = 0.1
 		_DisColor2 ("Dissolve Color 2", Color) = (1, 1, 1, 1)
 	}
 	SubShader
@@ -78,7 +78,7 @@
 				float3 noise21 = lerp(noise2, noise1, abs(worldNormal.x));
 				float3 noise213 = lerp(noise21, noise3, abs(worldNormal.z));
 
-				fixed4 col = fixed4(col213, 1);//tex2D(_MainTex, i.worldPos.xz);
+				fixed4 col = tex2D(_MainTex, i.uv);//fixed4(col213, 1);
 				fixed4 noise = fixed4(noise213, 1);//tex2D(_NoiseTex, i.worldPos.xz).r;
 
 				float useDis2 = noise - _DisThreshold < _DisWidth2;

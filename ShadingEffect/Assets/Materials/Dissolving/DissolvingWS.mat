@@ -63,7 +63,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DisPercent: 0
-    - _DisThreshold: 0.394
+    - _DisThreshold: 0.316
     - _DisWidth: 0.05
     - _DisWidth2: 0.1
     - _DstBlend: 0
