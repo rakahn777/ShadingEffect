@@ -64,19 +64,24 @@
 				fixed4 noise = tex2D(_NoiseTex, i.uv).r;
 
 				float dis = distance(_Position, i.worldPos);
-				dis += noise;
-				//float sphereNoise = 1 - saturate(dis / _DisRadius);
-				//sphereNoise = noise * sphereNoise;
-				//dis += sphereNoise;
-
-				float useDis2 = dis - _DisRadius < _DisWidth2;
-				col = (1 - useDis2) * col + useDis2 * _DisColor2;
+				//dis += noise;
+				float sphereNoise = 1 - saturate(dis / _DisRadius);
+				sphereNoise = noise * sphereNoise;
 				
-				float useDis = dis - _DisRadius < _DisWidth;
-				col = (1 - useDis) * col + useDis * _DisColor;
+				float disLineIn = sphereNoise - _DisWidth >= 0.1;
+
+				float noDis = 1 - disLineIn;
+
+				col = disLineIn * _DisColor + noDis * col;
+
+				//float useDis2 = dis - _DisRadius < _DisWidth2;
+				//col = (1 - useDis2) * col + useDis2 * _DisColor2;
+				
+				//float useDis = dis - _DisRadius < _DisWidth;
+				//col = (1 - useDis) * col + useDis * _DisColor;
 
 
-				clip(dis - _DisRadius);
+				//clip(0.1 - sphereNoise + _DisWidth);
 
 				return col;
 			}
